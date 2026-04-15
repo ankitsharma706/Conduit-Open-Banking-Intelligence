@@ -26,7 +26,7 @@ const LandingPage: React.FC = () => {
             <span className="text-xl font-black tracking-tighter uppercase">Conduit</span>
           </Link>
           
-          <div className="hidden md:flex items-center gap-10">
+          {/* <div className="hidden md:flex items-center gap-10">
             {[
               { label: 'API Health', path: '/health' },
               { label: 'SLA Performance', path: '/scorecard' },
@@ -41,7 +41,7 @@ const LandingPage: React.FC = () => {
                 {item.label}
               </Link>
             ))}
-          </div>
+          </div> */}
 
           <Link 
             to="/login"
