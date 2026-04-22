@@ -1,0 +1,7 @@
+{
+  "name": "Conduit - Open Banking Intelligence Platform",
+  "description": "India's first revenue-linked API observability and automated remediation operating system for the Open Banking ecosystem.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
