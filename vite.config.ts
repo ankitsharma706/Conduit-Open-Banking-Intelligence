@@ -11,11 +11,23 @@ export default defineConfig(({ mode }) => {
       },
       plugins: [react()],
       resolve: {
-
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
+      },
+      build: {
+        rollupOptions: {
+          output: {
+            manualChunks: {
+              'react-vendor': ['react', 'react-dom'],
+              'recharts-vendor': ['recharts'],
+              'd3-vendor': ['d3'],
+              'motion-vendor': ['motion'],
+              'lucide-vendor': ['lucide-react']
+            }
+          }
+        },
+        chunkSizeWarningLimit: 600
       }
-
     };
 });
